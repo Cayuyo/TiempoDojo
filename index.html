@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='es-CL'>
+
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -7,15 +8,122 @@
 
     <link rel='stylesheet' href='./css/styles.css'>
 </head>
+
 <body>
-    <div class='header'>
-
+    <div class="bg1">
+        <div class='header wrap'>
+            <h1>DojoWeayher</h1>
+            <ul class="ciudades">
+                <li>Rancagua</li>
+                <li>Santiago</li>
+                <li>Concepción</li>
+            </ul>
+        </div>
     </div>
-    
-    <div class='contenido'>
 
+    <div class="bg2">
+        <div class='contenido wrap'>
+            <div class='ciudad'>
+                <h1>Rancagua</h1>
+                <div>
+                    <span>Mostrar temperatura en:</span>
+                    <select name='medida' id='medida'>
+                        <option value='1'>°C</option>
+                        <option value='2'>°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class='semana'>
+                <div class='card'>
+                    <div class='dia'>
+                        <h2>Hoy</h2>
+                    </div>
+                    <div class='imagen'>
+                        <img src='./assets/some_rain.png' alt='imagen tiempo'>
+                        <p>Algo de lluvia</p>
+                    </div>
+                    <div class='temperatura'>
+                        <div class='maxima'>
+                            <h3>24°</h3>
+                        </div>
+                        <div class='minima'>
+                            <h3>18°</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='dia'>
+                        <h2>Mañana</h2>
+                    </div>
+                    <div class='imagen'>
+                        <img src='./assets/some_sun.png' alt='imagen tiempo'>
+                        <p>Algo de sol</p>
+                    </div>
+                    <div class='temperatura'>
+                        <div class='maxima'>
+                            <h3>27°</h3>
+                        </div>
+                        <div class='minima'>
+                            <h3>19°</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='dia'>
+                        <h2>Martes</h2>
+                    </div>
+                    <div class='imagen'>
+                        <img src='./assets/some_clouds.png' alt='imagen tiempo'>
+                        <p>Algo de nubes</p>
+                    </div>
+                    <div class='temperatura'>
+                        <div class='maxima'>
+                            <h3>21°</h3>
+                        </div>
+                        <div class='minima'>
+                            <h3>16°</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='dia'>
+                        <h2>Miercoles</h2>
+                    </div>
+                    <div class='imagen'>
+                        <img src='./assets/some_sun.png' alt='imagen tiempo'>
+                        <p>Algo de sol</p>
+                    </div>
+                    <div class='temperatura'>
+                        <div class='maxima'>
+                            <h3>26°</h3>
+                        </div>
+                        <div class='minima'>
+                            <h3>21°</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class='cookies wrap' onclick="ocultarCookies(this)">
+            <div class='icono-cookie'>
+                <img src='./assets/cookie.png' alt='imagen cookies'>
+            </div>
+            <div class='texto-cookies'>
+                <h3>Detente! Hora de Cookies</h3>
+                <p>Usamos cookies (lamentablemente no las comestibles) para personalizar el contenido y los anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico. <a href='#'>Leer más...</a></p>
+            </div>
+            <div class='boton-cookies'>
+                <button id="btn-cookies">Acepto</button>
+            </div>
+        </div>
     </div>
+
 
     <script src='./js/funciones.js'></script>
 </body>
+
 </html>
